@@ -1,1 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação Mar e Pesca - Cartografia Náutica e Segurança no Mar</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-sky-500 selection:text-slate-950">
 
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-900">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-500 to-blue-600 flex items-center justify-center shadow-lg shadow-sky-500/20">
+                    <i data-lucide="anchor" class="w-6 h-6 text-slate-950 stroke-[2.5]"></i>
+                </div>
+                <span class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent">
+                    Navegação Mar e Pesca
+                </span>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-400">
+                <a href="#funcionalidades" class="hover:text-sky-400 transition-colors">Funcionalidades</a>
+                <a href="#seguranca" class="hover:text-sky-400 transition-colors">Segurança</a>
+                <a href="#tecnologia" class="hover:text-sky-400 transition-colors">Tecnologia</a>
+                <a href="#capturas" class="hover:text-sky-400 transition-colors">Screenshots</a>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <!-- Botão Download Verde no Header -->
+                <a href="https://github.com/manelito20-star/-navega-p-mar-e-pesca-._./releases/download/V1.0/Navegacao.Mar.e.pesca.apk" class="flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-4 py-2.5 rounded-xl shadow-lg shadow-emerald-500/20 transition-all text-sm">
+                    <i data-lucide="download" class="w-4 h-4 stroke-[2.5]"></i>
+                    <span>Download APK</span>
+                </a>
+                
+                <a href="https://github.com/manelito20-star/-navega-p-mar-e-pesca-._." target="_blank" class="hidden sm:flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-semibold px-4 py-2.5 rounded-xl border border-slate-800 transition-all text-sm">
+                    <i data-lucide="github" class="w-4 h-4"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-400 text-xs font-bold tracking-wide uppercase mb-8">
+                <i data-lucide="compass" class="w-3.5 h-3.5"></i> Cartografia Náutica Online & Offline para Portugal
+            </div>
+            
+            <h1 class="text-4xl md:text-7xl font-extrabold text-white tracking-tight leading-[1.1] mb-6 max-w-4xl mx-auto">
+                O teu assistente inteligente de navegação e pesca no mar.
+            </h1>
+            
+            <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 font-normal leading-relaxed">
+                Cartografia náutica OpenSeaMap, mapas offline com polígonos de costa, alarme de fundeio, meteorologia marítima e partilha comunitária de pesqueiros.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="https://github.com/manelito20-star/-navega-p-mar-e-pesca-._./releases/download/V1.0/Navegacao.Mar.e.pesca.apk" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-slate-950 font-bold px-8 py-4 rounded-xl shadow-lg shadow-sky-500/25 transition-all transform hover:-translate-y-0.5">
+                    <i data-lucide="download" class="w-5 h-5 stroke-[2.5]"></i>
+                    <span>Descarregar APK v1.0</span>
+                </a>
+                <a href="#capturas" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-slate-200 font-semibold px-8 py-4 rounded-xl border border-slate-800 transition-all">
+                    <span>Ver Screenshots</span>
+                    <i data-lucide="arrow-down" class="w-4 h-4"></i>
+                </a>
+            </div>
+
+            <!-- Stats / Highlights -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mt-20 pt-10 border-t border-slate-900 text-left">
+                <div>
+                    <div class="text-3xl font-extrabold text-white mb-1">Offline</div>
+                    <div class="text-xs text-slate-400 font-medium">Polígonos de Costa sem Internet</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-extrabold text-white mb-1">GPX</div>
+                    <div class="text-xs text-slate-400 font-medium">Importação & Exportação Náutica</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-extrabold text-white mb-1">Fundeio</div>
+                    <div class="text-xs text-slate-400 font-medium">Alarme de Deriva Configurável</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-extrabold text-sky-400 mb-1">Firebase</div>
+                    <div class="text-xs text-slate-400 font-medium">Partilha Comunitária de Pontos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="funcionalidades" class="py-24 bg-slate-900/40 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-sky-400 text-sm font-bold tracking-wider uppercase mb-3">Funcionalidades Principais</h2>
+                <p class="text-3xl md:text-4xl font-bold text-white tracking-tight">Ferramentas essenciais para navegadores e pescadores.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center mb-6 text-sky-400">
+                        <i data-lucide="map" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cartografia & OpenSeaMap</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Mapas online e modo offline com linha de costa pré-carregada. Camada náutica com balizagem, faróis e rotação orientada por bússola.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center mb-6 text-blue-400">
+                        <i data-lucide="navigation" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Computador de Bordo & Marés</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Velocidade em nós (kt), rumo (COG/HDG), gravação de trilho, rota direta para o ponto de saída e previsão de marés, correntes e estado do mar.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center mb-6 text-indigo-400">
+                        <i data-lucide="users" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Comunidade & Suporte GPX</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Partilha e sincroniza pesqueiros, rampas e perigos via Firebase com moderação comunitária. Exporta e importa ficheiros GPX para OpenCPN ou Garmin.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Segurança Section -->
+    <section id="seguranca" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="p-10 md:p-16 rounded-3xl bg-gradient-to-br from-slate-900 via-slate-900 to-sky-950/30 border border-slate-800 flex flex-col md:flex-row items-center gap-12">
+                <div class="flex-1 space-y-6">
+                    <span class="px-3 py-1 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-400 text-xs font-bold uppercase tracking-wider">
+                        Segurança & Prevenção
+                    </span>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-white tracking-tight">
+                        Alarme de Fundeio e Zonas Protegidas
+                    </h2>
+                    <p class="text-slate-400 leading-relaxed">
+                        Monitoriza continuamente a posição da embarcação após largar ferro, disparando alertas visuais e vibração intensa se houver deriva fora do raio definido. Inclui ainda limites de reservas naturais (Arrábida, Berlengas) e canais do Tejo e Sado.
+                    </p>
+                    <ul class="space-y-3 text-sm text-slate-300">
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-sky-400"></i>
+                            Checklist essencial de pré-partida antes de navegar.
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-sky-400"></i>
+                            Regresso seguro direto ao ponto de saída guardado.
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-80 p-6 rounded-2xl bg-slate-950/80 border border-slate-800 space-y-4 text-center">
+                    <div class="w-12 h-12 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center mx-auto mb-2">
+                        <i data-lucide="shield-alert" class="w-6 h-6"></i>
+                    </div>
+                    <div class="font-bold text-white">Aviso Legal</div>
+                    <div class="text-xs text-slate-400 leading-relaxed">Aplicação informativa e de auxílio à navegação; não substitui equipamentos e cartas náuticas oficiais obrigatórias.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section id="tecnologia" class="py-20 border-t border-slate-900 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-slate-400 text-xs font-bold uppercase tracking-widest mb-8">Construído com tecnologia moderna Android</h2>
+            <div class="flex flex-wrap items-center justify-center gap-8 md:gap-16 font-semibold text-slate-300 text-sm">
+                <span class="flex items-center gap-2"><i data-lucide="code-2" class="w-4 h-4 text-sky-400"></i> Kotlin</span>
+                <span class="flex items-center gap-2"><i data-lucide="layout-grid" class="w-4 h-4 text-sky-400"></i> Jetpack Compose (Material 3)</span>
+                <span class="flex items-center gap-2"><i data-lucide="database" class="w-4 h-4 text-sky-400"></i> Firebase Firestore</span>
+                <span class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-sky-400"></i> Google Maps & osmdroid</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section id="capturas" class="py-24 border-t border-slate-900 bg-slate-900/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-sky-400 text-sm font-bold tracking-wider uppercase mb-3">Interface da Aplicação</h2>
+                <p class="text-3xl md:text-4xl font-bold text-white tracking-tight">Conhece o Navegação Mar e Pesca em Ação</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="group relative overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 shadow-xl transition-all duration-300 hover:-translate-y-2 hover:border-sky-500/50">
+                    <img src="https://raw.githubusercontent.com/manelito20-star/-navega-p-mar-e-pesca-._./main/1.jpeg" alt="Screenshot 1" class="w-full h-auto object-cover rounded-2xl">
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 shadow-xl transition-all duration-300 hover:-translate-y-2 hover:border-sky-500/50">
+                    <img src="https://raw.githubusercontent.com/manelito20-star/-navega-p-mar-e-pesca-._./main/2.jpeg" alt="Screenshot 2" class="w-full h-auto object-cover rounded-2xl">
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 shadow-xl transition-all duration-300 hover:-translate-y-2 hover:border-sky-500/50">
+                    <img src="https://raw.githubusercontent.com/manelito20-star/-navega-p-mar-e-pesca-._./main/3.jpeg" alt="Screenshot 3" class="w-full h-auto object-cover rounded-2xl">
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 shadow-xl transition-all duration-300 hover:-translate-y-2 hover:border-sky-500/50">
+                    <img src="https://raw.githubusercontent.com/manelito20-star/-navega-p-mar-e-pesca-._./main/4.jpeg" alt="Screenshot 4" class="w-full h-auto object-cover rounded-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-900 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <p>© Navegação Mar e Pesca — Cartografia Náutica e Apoio ao Navegador</p>
+            <p>Aplicação informativa. Não substitui instrumentos oficiais obrigatórios.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
